@@ -13,4 +13,4 @@ jobs:
       - name: Run GitHub File Sync
         uses: Leocete/repo-file-sync-action@latest
         with:
-          GH_PAT: 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
+          GH_PAT: ${{ secrets.GH_PAT }}
