@@ -11,6 +11,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@master
       - name: Run GitHub File Sync
-        uses: Leocete/repo-file-sync-action@latest
+        uses: Leocete/repo-file-sync-action@master
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
+      # - name: Run other GitHub file sync
+      #   uses: adrianjost/files-sync-action@v1.0.1
+      #   with:
+      #     FILE_PATTERNS: |
+      #       ^LICENSE$
+      #       ^docs/README.md
+      #     TARGET_REPOS: |
+      #       Leocete/Repository_B
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_FILES }}
