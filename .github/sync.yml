@@ -1,3 +1,3 @@
 Leocete/Repository_B:
-  - source: docs/README.md
-    dest: app/docs/README.md
+  - source: docs/
+    dest: app/docs/
